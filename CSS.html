@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+	<title>CSS</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+		
+		body {background-color:paleturquoise;}
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 300px;
+            margin: 0 10px;
+			color: midnightblue
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+			color:darkslategrey
+        }
+
+        .item {
+            flex: 1;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .ui-widget-content {
+            background: #fff;
+            border: 1px solid #ccc;
+            color: #222;
+        }
+
+        @media screen and (max-width: 768px) {
+            .column {
+                flex: 1 100%;
+                margin: 10px 0;
+            }
+        }
+		    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 300px;
+        margin: 10px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+        margin-top: 0;
+    }
+
+    .card p {
+        margin-bottom: 0;
+    }
+
+    .datepicker {
+        width: 100%; }
+
+    @media only screen and (max-width: 600px) {
+        .content {
+            flex-direction: column;}
+
+        .card {
+            width: 100%; }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pet Care Tips</h1>
+        <div class="content">
+        <div class="column">
+          <h2>What to do</h2>
+          <div class="row">
+            <div class="item">Regular grooming</div>
+            <div class="item">Keep up with shots</div>
+              </div>
+             <div class="row">
+                <div class="item">Proper Training</div>
+                 <div class="item">Show Affection</div>
+              </div>
+           </div>
+            <div class="column">
+                <h2>What to avoid</h2>
+                <div class="row">
+                    <div class="item">Praise all actions</div>
+                    <div class="item">Buy them to many toys</div>
+                </div>
+                <div class="row">
+                    <div class="item">Ignore bad behaviour</div>
+                    <div class="item">Physical punishment</div>
+               </div>
+           </div>
+       </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
+	<div class="container">
+    <div class="content">
+    <div class="card">
+	<div class="row">
+            <h2>Feeding Schedules</h2>
+            <p>Feeding time 1:</p>
+           
+		   <ul>
+               <li>Morning: 8:00 AM</li>
+               <li>Afternoon: 1:00 PM</li>
+               <li>Evening: 6:00 PM</li>
+		</ul>
+		 <p>Feeding time 2:</p>
+		<ul>
+			   <li>Morning: 10:00 AM</li>
+               <li>Afternoon: 3:00 PM</li>
+			   <li>Evening: 8:00 PM</li>
+		</ul>
+		</div>
+      </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</body>
+</html>
