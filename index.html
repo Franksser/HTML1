@@ -1,93 +1,66 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Franksser's HTML 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet-Solutions/Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
 <style>
-body {background-color:paleturquoise;}
-h1   {color:blue;}
-</style>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-	<style>
-	
-		h1{font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"}
-		h2{font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"}
-		h3{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"}
-	
-	</style>
-<body>
-	<h1>Pitbulls</h1>
-	<hr>
-		<h2>Are they bad dogs?</h2>
-	<img src= "images/pitbull.jpg" alt="Cute dog looking up">
-			<h3>Of course not!</h3>
-	<p> <i title="Focuse." style="color:darkblue">Pitbulls</i>, and <a href= "images.html">all dogs</a> for that matter, are not born <b title="As commonly belived." style="color:red">bad or aggressive</b>, a dog's behaviour  always be affected by their owners decisions and actions; making it unfair to judge one dog, or an entire breed thanks to the mistakes that a bad owner made. At the end of the day <i style="color:darkblue">"All dogs deserve an owner, but not all owners deserve a dog."</i></p> 
-	<img src= "images/pitbullsad.jpg" alt="Sad dog">
-	
-	<h2>How to deal with missbehaving dogs?</h2>
-<table style="width:60%; border: medium solid; ">
-	<tr align="left">
-		<th><a href="https://wagwalking.com/sense/can-dogs-remember-abuse">The incorrect way:</a></th>
-		<th><a href="https://www.israelguidedog.org">The proper way:</a></th>
-	</tr>
-	<tr> 
-		<td>*Excessive phisical and verbal reprehension.</td>
-		<td>*Projecting a calm body language.</td>
-	</tr>
-	<tr>
-		<td>*Always rewarding the dog, before, during, or after bad behaviour.</td>
-		<td>*Giving treats when succesfuly meating expectations.</td>
-	</tr>
-	<tr>
-		<td>*Leting the dog loose or out of sight around strangers</td>
-		<td>*Keeping an eye on both the dog and any new comers</td>
-	</tr>
-	<tr>
-		<td>*Allowing the dog keep socializing with bad behaving dogs.</td>
-		<td>*Noticing when your dog is around a bad influence.</td>
-	</tr>
-	
-	</table>
-	<img src= "images/happypitbull.jpg" alt="Happy dog">
-	<h2>Why should you <a href="CSS.html">care?</a></h2>
-	<ul>
-	<li>Lower bite rates.</li>
-	<il>Decrease hatred and fear towards dogs.</il>
-	<li>Demolish old myths around dog breeds.</li>
-	<li>Decrease uthination/put-down rates.</li>
-	</ul>
-	
-	<h2>Important stuff for the newbies!</h2>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/kUBIPULlKMk?si=IftcRAjqWMP0tpdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	<p>Was this video helpful?</p>
-		<label for="Yes.">Yes.</label>
-		<input type="checkbox" id="Yes.">
-	<label for="No.">No.</label>
-		<input type="checkbox" id="No.">
-	
-	<p> If so, then how helpful was this video?</p>
 
-	<label for="YES">A LOT!</label>
-		<input type="radio" id="YES">
-	<label for="KindOfYES">Not Much!</label>
-		<input type="radio" id="KindOfYES">
-	<label for="KindOfNo">Not Really</label>
-		<input type="radio" id="KindOfNo">
-	<label for="NOPE">Nope</label>
-		<input type="radio" id="NOPE">
-	
-	<h3>Log in to enter our forum </h3>
-	<form action="">
-		  
-		<label for="First">Username:</label>
-			<input typee="text" id="first"><br>
-		<label for="First">Password:</label>
-			<input typee="password" id="second"><br>
-		<button type="submit">Submit</button>
-			  </form>
+body {
+  margin: 0;
+  font-family: Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+header {
+  background-color:#35B5FF;
+  padding: 10px 0;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li  {
+  margin: 0 10px;
+}
+
+.menu li a {
+  color: white; 
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: #F0F9FF;
+  border-color: #041474;
+  color:black;
+  text-decoration: overline;
+  text-decoration-style:double
+}
+
+</style>
+
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="mission.html">Mission</a></li>
+        <li><a href="premise.html">Premise</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+  </header>
 </body>
 </html>
