@@ -5,11 +5,22 @@
 body {
   margin: 0;
   font-family: Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+  background-image: url("images/background.jpg");
+  background-size:cover;
+  background-repeat:repeat-y;
+  
 }
-
 header {
   background-color:#35B5FF;
   padding: 10px 0;
+  position:static;
+  top:auto;
+}
+
+.logo {
+	background-image: url("images/Logo.png");
+	display:flex;
+	justify-content: center;
 }
 
 .menu {
@@ -39,4 +50,22 @@ header {
   color:black;
   text-decoration: overline;
   text-decoration-style:double
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: bottom;
+  height: 100vh;
+}
+
+.textbox {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color:#A49BF8;
+  text-align: center;
 }
