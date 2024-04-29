@@ -66,12 +66,12 @@ img {
 
 .textbox {
   width: 300px;
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid #ccc;
+  margin: 15px;
+  border: 3px solid #ccc;
   border-radius: 5px;
   background-color:#A49BF8;
   text-align: center;
+  align-content:center;
 }
   .infocontainer {
     display: flex;
@@ -136,7 +136,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 40vh;
 	font-size: 15pt;
   }
   
@@ -160,21 +160,23 @@ img {
 
 .whereitgoes {
 	display:flex;
-    justify-content:flex-end;
+    justify-content:center;
     align-items:center;
     height:30vh;
+	font:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
 
 .whereitis {
 	display:contents;
-    justify-content:flex-end;
+    justify-content:center;
     align-items:center;
-    height:30vh;
+    height:20vh;
+	font:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
 
   p {
-    margin: 0;
-	font:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    margin: 1;
+	font:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
   }
 
  .imgvid {
