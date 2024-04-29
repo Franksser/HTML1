@@ -17,6 +17,10 @@ header {
   top:auto;
 }
 
+img {
+	display: flex;
+}
+
 .logo {
 	background-image: url("images/Logo.png");
 	display:flex;
@@ -127,3 +131,106 @@ header {
   .btn:hover {
     background-color: #0056b3;
   }
+
+ .paragraphcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+	font-size: 15pt;
+  }
+  
+  .paragraphbox {
+    width: 70%;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color:#C7BBF3;
+  }
+  
+.smalltoside {
+	width: 40%;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    background-color: #C7BBF3;
+	align-content: center;
+	font-size: 15pt;
+}
+
+.whereitgoes {
+	display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    height:30vh;
+}
+
+.whereitis {
+	display:contents;
+    justify-content:flex-end;
+    align-items:center;
+    height:30vh;
+}
+
+  p {
+    margin: 0;
+	font:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  }
+
+ .imgvid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .item {
+        flex: 0 0 auto;
+        margin-right: 10px;
+		max-width: 100%;
+        height: auto; 
+    }
+   
+.item img { max-width: 100%;
+        height: auto; 
+	    align-items: center;
+}
+
+    .item video {
+        max-width: 100%;
+        height: auto; 
+    }
+
+h3 {
+	font:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-align: center;
+}
+
+h4 {
+	font:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%; 
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+    .container {
+        width: 90%; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .container {
+        width: 95%;
+    }
+}
